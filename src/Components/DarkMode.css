@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark mode styles */
+/* Global Dark Mode */
+.dark-mode {
+  background-color: #1a202c !important; /* Dark gray */
+  color: white !important;
+}
+
+.dark-mode h2 {
+  color: #e2e8f0 !important; /* Light grayish text */
+}
+
+/* Dark mode card text */
+.dark-mode h3 {
+  color: #e2e8f0 !important;
+}
+
+/* Category Card Background */
+.dark-mode .bg-blue-500 { background-color: #1e3a8a !important; }
+.dark-mode .bg-green-500 { background-color: #065f46 !important; }
+.dark-mode .bg-purple-500 { background-color: #4c1d95 !important; }
+.dark-mode .bg-red-500 { background-color: #7f1d1d !important; }
+.dark-mode .bg-yellow-500 { background-color: #a16207 !important; }
+.dark-mode .bg-gray-600 { background-color: #4a5568 !important; }
+.dark-mode .bg-teal-500 { background-color: #0f766e !important; }
+.dark-mode .bg-indigo-500 { background-color: #3730a3 !important; }
+.dark-mode .bg-pink-500 { background-color: #9d174d !important; }
+
+/* Border & Shadows */
+.dark-mode .border {
+  border-color: #4a5568 !important;
+}
