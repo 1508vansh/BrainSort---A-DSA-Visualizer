@@ -1,0 +1,33 @@
+ @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+
+/* Light Mode (Default) */
+:root {
+  --bg-color: #f7fafc; /* Light background */
+  --text-color: #1a202c; /* Dark text */
+  --nav-bg: #2d3748; /* Navbar background */
+  --card-bg: #ffffff; /* Card background */
+  --card-text: #4a5568; /* Card text */
+}
+
+/* Dark Mode */
+.dark-mode {
+  --bg-color: #1a202c; /* Dark background */
+  --text-color: #e2e8f0; /* Light text */
+  --nav-bg: #1a202c; /* Navbar background */
+  --card-bg: #2d3748; /* Card background */
+  --card-text: #cbd5e0; /* Card text */
+}
+
+/* Base styles */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--nav-bg) !important;
+}

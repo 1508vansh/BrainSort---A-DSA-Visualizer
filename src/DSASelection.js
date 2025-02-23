@@ -1,29 +1,20 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Routes, Route } from "react-router";
-import Navbar from "./Components/Navbar";
-import RunningText from "./Components/RunningText";
-import AlgorithmCards from "./Components/AlgorithmCards";
-import SortingVisualizer from "./Components/visualizers/SortingVisualizer"; // Example visualizer
-import SearchingVisualizer from "./Components/Visualizers/SearchingVisualizer";
-import GraphVisualizer from "./Components/Visualizers/GraphVisualizer";
+import { useLocation, Outlet } from "react-router";
+import RunningText from "./Components/Ui/RunningText";
 import "../index.css";
-
+import "./Components/Ui/DarkMode.css";
 function DSASelection() {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/visualizer" || location.pathname === "/visualizer/";
+
   return (
-    <Router>
-      <Navbar />
-      <RunningText />
-      <Routes>
-        <Route path="/" element={<AlgorithmCards />} />
-        <Route path="/visualize/sorting" element={<SortingVisualizer />} />
-        <Route path="/visualize/searching" element={<SearchingVisualizer/>}/>
-        <Route path="/visualize/graph" element={<GraphVisualizer />} />
-        {/* Add more routes for other algorithms */}
-      </Routes>
-    </Router>
+    <>
+      <div style={{ backgroundColor: "var(--bg-color)", color: "var(--text-color)" }}>
+      {isHomePage && <RunningText />}
+      <Outlet />
+    </div>
+    </>
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<DSASelection />);
+export default DSASelection;

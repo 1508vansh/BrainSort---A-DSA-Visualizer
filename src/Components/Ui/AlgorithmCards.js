@@ -9,18 +9,18 @@ import image6 from "../assets/1_eTQoIHGdG58sy-iMwcp97w.png";
 import image7 from "../assets/1_EEmpU5oXP-iLual-5u9aFA.png";
 import image8 from "../assets/Greedy_algorithm_36_cents.svg";
 import image9 from "../assets/what-is-graphs-in-data-structure.avif";
-import "../Components/DarkMode.css";
+// import "./DarkMode.css";
 
 const algorithmCategories = [
-  { name: "Sorting Algorithms", icon: <FaSort />, path: "/visualize/sorting", borderColor: "border-blue-500", bgColor: "bg-blue-500", image: image1 },
-  { name: "Searching Algorithms", icon: <FaSearch />, path: "/visualize/searching", borderColor: "border-green-500", bgColor: "bg-green-500", image: image6 },
-  { name: "Graph Algorithms", icon: <FaProjectDiagram />, path: "/visualize/graph", borderColor: "border-purple-500", bgColor: "bg-purple-500", image: image9 },
-  { name: "Dynamic Programming", icon: <FaBrain />, path: "/visualize/dp", borderColor: "border-red-500", bgColor: "bg-red-500", image: image2 },
-  { name: "Greedy Algorithms", icon: <FaChartLine />, path: "/visualize/greedy", borderColor: "border-yellow-500", bgColor: "bg-yellow-500", image: image4 },
-  { name: "Backtracking", icon: <FaPuzzlePiece />, path: "/visualize/backtracking", borderColor: "border-gray-500", bgColor: "bg-gray-600", image: image3 },
-  { name: "Tree Algorithms", icon: <FaTree />, path: "/visualize/tree", borderColor: "border-teal-500", bgColor: "bg-teal-500", image: image5 },
-  { name: "Mathematical Algorithms", icon: <FaCalculator />, path: "/visualize/math", borderColor: "border-indigo-500", bgColor: "bg-indigo-500", image: image8 },
-  { name: "String Algorithms", icon: <FaFont />, path: "/visualize/string", borderColor: "border-pink-500", bgColor: "bg-pink-500", image: image7 },
+  { name: "Sorting Algorithms", icon: <FaSort />, path: "/visualizer/sorting", borderColor: "border-blue-500", bgColor: "bg-blue-500", image: image1 },
+  { name: "Searching Algorithms", icon: <FaSearch />, path: "/visualizer/searching", borderColor: "border-green-500", bgColor: "bg-green-500", image: image6 },
+  { name: "Graph Algorithms", icon: <FaProjectDiagram />, path: "/visualizer/graph", borderColor: "border-purple-500", bgColor: "bg-purple-500", image: image9 },
+  { name: "Dynamic Programming", icon: <FaBrain />, path: "/visualizer/dp", borderColor: "border-red-500", bgColor: "bg-red-500", image: image2 },
+  { name: "Greedy Algorithms", icon: <FaChartLine />, path: "/visualizer/greedy", borderColor: "border-yellow-500", bgColor: "bg-yellow-500", image: image4 },
+  { name: "Backtracking", icon: <FaPuzzlePiece />, path: "/visualizer/backtracking", borderColor: "border-gray-500", bgColor: "bg-gray-600", image: image3 },
+  { name: "Tree Algorithms", icon: <FaTree />, path: "/visualizer/tree", borderColor: "border-teal-500", bgColor: "bg-teal-500", image: image5 },
+  { name: "Mathematical Algorithms", icon: <FaCalculator />, path: "/visualizer/math", borderColor: "border-indigo-500", bgColor: "bg-indigo-500", image: image8 },
+  { name: "String Algorithms", icon: <FaFont />, path: "/visualizer/string", borderColor: "border-pink-500", bgColor: "bg-pink-500", image: image7 },
 ];
 
 export default function AlgorithmCards() {
@@ -32,7 +32,7 @@ export default function AlgorithmCards() {
 
   return (
     <div className={`container mx-auto px-4 py-12 ${darkMode ? "dark-mode" : ""}`}>
-      <h2 className="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-gray-100">
+      <h2 className="text-4xl font-bold text-center mb-12 text-white-800 dark:text-red-100">
         Explore Algorithm Categories
       </h2>
       
