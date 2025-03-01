@@ -32,7 +32,7 @@ To run **BrainSorter** locally, follow these steps:
 
 1. **Clone the Repository:**  
    ```bash
-   git clone [https://github.com/yourusername/brainsorter.git](https://github.com/1508vansh/BrainSort---A-DSA-Visualizer.git)
+   git clone https://github.com/1508vansh/BrainSort---A-DSA-Visualizer.git
    cd brainsorter
    ```  
 
