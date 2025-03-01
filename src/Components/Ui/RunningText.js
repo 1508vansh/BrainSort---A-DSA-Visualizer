@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 const phrases = [
-  "Welcome to BrainSort!",
+  "Welcome to BrainSorter!",
   "Explore Algorithms!",
   "Visualize Data Structures!"
 ];

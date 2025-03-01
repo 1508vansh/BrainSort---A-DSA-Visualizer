@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter as Router, Routes, Route } from "react-router";
 import Navbar from "./src/Components/Ui/Navbar";
 import Footer from "./src/Components/Ui/DSAVisuFooter";
 import Main from "./Main";
@@ -14,12 +14,13 @@ import MathAlgorithms from "./src/Components/Visualizers/MathVisualization";
 import BacktrackingAlgorithms from "./src/Components/Visualizers/Backtracking";
 import GreedyAlgorithms from "./src/Components/Visualizers/GreedyVisualization";
 import TreeVisualizer from "./src/Components/Visualizers/TreeVisualization";
+import RaceModeMainPage from "./src/RaceModeMain";
 import DSASelection from "./src/DSASelection";
-import RushMode from "./src/RushMode";
+import RaceMode from "./src/RaceMode";
 import "./src/Components/Ui/DarkMode.css";
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <div className="min-h-screen flex flex-col" style={{ backgroundColor: "var(--bg-color)", color: "var(--text-color)" }}>
         <Navbar />
         <Routes>
@@ -36,11 +37,12 @@ function App() {
             <Route path="greedy" element={<GreedyAlgorithms />} />
             <Route path="tree" element={<TreeVisualizer />} />
           </Route>
-          <Route path="/rush" element={<RushMode />} />
+          <Route path="/RaceModeMain" element={<RaceModeMainPage />} />
+          <Route path="/RaceMode" element={<RaceMode />} />
         </Routes>
         <Footer />
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 

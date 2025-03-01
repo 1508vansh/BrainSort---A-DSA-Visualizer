@@ -1,14 +1,12 @@
 {
-  "homepage": "https://1508vansh.github.io/BrainSort---A-DSA-Visualizer",
   "name": "dsa-visualizer",
   "version": "1.0.0",
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build index.html --public-url ./",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-  },
+  "start": "parcel index.html",
+  "build": "parcel build index.html"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
