@@ -45,7 +45,7 @@ To run **BrainSorter** locally, follow these steps:
    ```bash
    npm start
    ```  
-   The project will be available at [http://localhost:3000](http://localhost:3000).  
+   The project will be available at [https://animated-khapse-25c4ca.netlify.app/](https://animated-khapse-25c4ca.netlify.app/).  
 
 ## 🚀 Usage  
 
